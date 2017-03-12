@@ -1,7 +1,7 @@
 require 'druid/query'
 
 module Druidby
-  class TimeseriesQuery < Query
+  class TimeseriesQuery < Druidby::Query
     def initialize(client, data_source, descending = false)
       super(client, data_source)
       @json_data[:queryType] = "timeseries"

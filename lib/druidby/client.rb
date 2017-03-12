@@ -3,7 +3,6 @@ require 'druidby'
 module Druidby
   class Client
     attr_accessor :query_url, :timeout
-
     def initialize(query_url, timeout=60)
       @query_url = query_url
       @timeout = timeout
